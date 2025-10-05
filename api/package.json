@@ -1,0 +1,8 @@
+{
+  "name": "retro-anime-finder-api",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "csv-parse": "^5.5.2"
+  }
+}
