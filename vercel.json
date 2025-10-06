@@ -9,8 +9,14 @@
       }
     },
     {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
+      "src": "api/recommend.js",
+      "use": "@vercel/node",
+      "maxDuration": 30
+    },
+    {
+      "src": "api/health.js",
+      "use": "@vercel/node",
+      "maxDuration": 10
     }
   ],
   "routes": [
@@ -22,13 +28,5 @@
       "src": "/(.*)",
       "dest": "/frontend/dist/$1"
     }
-  ],
-  "functions": {
-    "api/recommend.js": {
-      "maxDuration": 30
-    },
-    "api/health.js": {
-      "maxDuration": 10
-    }
-  }
+  ]
 }
